@@ -7,6 +7,7 @@ export class MyService<ImportantValue extends string> {
 }
 
 export type MyFirstAppName = 'MyFirstApp';
+export type MySecondAppName = 'MySecondApp';
 
 export class MyService1 extends MyService<MyFirstAppName>{
   importantValue: MyFirstAppName = 'MyFirstApp';
@@ -14,8 +15,6 @@ export class MyService1 extends MyService<MyFirstAppName>{
     super();
   }
 }
-
-export type MySecondAppName = 'MySecondApp';
 
 export class MyService2 extends MyService<MySecondAppName> {
   importantValue: MySecondAppName = 'MySecondApp';
