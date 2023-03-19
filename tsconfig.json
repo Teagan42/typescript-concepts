@@ -3,15 +3,20 @@
     "lib": [
       "ES2017"
     ],
+    "skipLibCheck": true,
     "module": "commonjs",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "types": ["node"],
     "target": "es5",
-    "sourceMap": true
+    "sourceMap": true,
+    "rootDir": "./src"
   },
-  "include": [],
+  "include": [
+    "src"
+  ],
   "exclude": [
-    "./node_modules"
+    "node_modules",
+    "**/node-modules/"
   ]
 }
