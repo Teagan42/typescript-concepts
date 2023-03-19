@@ -6,11 +6,19 @@ export class MyService<ImportantValue extends string> {
   }
 }
 
-export type AppName = 'MyFirstApp';
-export const AppName: AppName = 'MyFirstApp';
+export type MyFirstAppName = 'MyFirstApp';
 
-export class MyServiceImplementation extends MyService<AppName> {
-  importantValue: AppName = AppName;
+export class MyService1 extends MyService<MyFirstAppName>{
+  importantValue: MyFirstAppName = 'MyFirstApp';
+  constructor() {
+    super();
+  }
+}
+
+export type MySecondAppName = 'MySecondApp';
+
+export class MyService2 extends MyService<MySecondAppName> {
+  importantValue: MySecondAppName = 'MySecondApp';
 
   constructor() {
     super();
