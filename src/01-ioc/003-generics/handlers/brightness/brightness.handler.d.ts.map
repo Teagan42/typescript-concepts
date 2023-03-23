@@ -1,0 +1,1 @@
+{"version":3,"file":"brightness.handler.d.ts","sourceRoot":"","sources":["brightness.handler.ts"],"names":[],"mappings":"AAAA,OAAO,EAAS,WAAW,EAAC,MAAM,cAAc,CAAC;AAEjD,MAAM,MAAM,iBAAiB,GAAG;IAC9B,aAAa,CAAC,MAAM,EAAE,WAAW,CAAC,GAAG,EAAE,iBAAiB,CAAC,EAAE,UAAU,EAAE,MAAM,GAAG,OAAO,CAAC,MAAM,CAAC,CAAC;CACjG,CAAA"}

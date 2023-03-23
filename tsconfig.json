@@ -1,21 +1,27 @@
 {
   "compilerOptions": {
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"],
+    "target": "es2017",
+    "sourceMap": true,
+    "rootDir": "./src",
+    "declaration": true,
     "lib": [
       "ES2017"
     ],
-    "skipLibCheck": true,
-    "module": "commonjs",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "types": ["node"],
-    "target": "es5",
-    "sourceMap": true,
-    "rootDir": "./src"
+    "downlevelIteration": true,
+    "plugins": [{ "transform": "typescript-rtti/dist/transformer" }]
   },
   "include": [
-    "src"
+    "src/**/*.ts"
   ],
   "exclude": [
+    "src/**/*.d.ts",
     "node_modules",
     "**/node-modules/"
   ]

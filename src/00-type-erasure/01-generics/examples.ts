@@ -4,7 +4,7 @@ export const getName = <Name extends string>(): string => {
 
 export type setConfiguration = (config: Record<string, string>) => void;
 
-export class App<SetConfig extends setConfiguration> {
+export class Example<SetConfig extends setConfiguration> {
   constructor(private readonly setConfig: SetConfig) {
   }
 }

@@ -1,0 +1,1 @@
+{"version":3,"file":"mock.brightness-handler.d.ts","sourceRoot":"","sources":["mock.brightness-handler.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,iBAAiB,EAAC,MAAM,sBAAsB,CAAC;AACvD,OAAO,EAAC,MAAM,EAAC,MAAM,cAAc,CAAC;AAEpC,qBAAa,qBAAsB,YAAW,iBAAiB;IACvD,aAAa,CAAC,MAAM,EAAE,MAAM,CAAC,GAAG,CAAC,EAAE,UAAU,EAAE,MAAM,GAAG,OAAO,CAAC,MAAM,CAAC;CAG9E"}
