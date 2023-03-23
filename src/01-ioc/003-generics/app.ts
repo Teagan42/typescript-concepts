@@ -25,3 +25,5 @@ app.addDevice(
         new MockBrightnessHandler()
     )
 );
+
+console.log(app.devices);

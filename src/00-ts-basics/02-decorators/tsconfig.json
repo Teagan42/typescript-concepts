@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2017"
+    ],
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": ["node"],
+    "target": "es5",
+    "sourceMap": true,
+    "rootDir": "./"
+  },
+  "include": [
+    "examples.ts"
+  ],
+  "exclude": [
+    "runtime-compile",
+    "main.ts",
+    "node_modules",
+    "**/node-modules/"
+  ]
+}
