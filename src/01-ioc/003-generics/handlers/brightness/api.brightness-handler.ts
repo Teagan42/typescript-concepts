@@ -6,7 +6,7 @@ export interface SomeApi {
   control(id: string, brightness: number): Promise<number>;
 }
 
-export class ApiPowerHandler implements BrightnessHandler {
+export class ApiBrightnessHandler implements BrightnessHandler {
   constructor(private readonly api: SomeApi) {
   }
 

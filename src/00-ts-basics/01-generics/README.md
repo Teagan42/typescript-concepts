@@ -14,6 +14,6 @@ Review the `examples.ts` as it provides some pretty basic examples using Generic
 Run `nest build`
 Followed by `ndoe src/00-ts-basics/01-generics/examples`
 
-You should see how the generics changed between typescript and the compiled java script
+You should see how the generics changed between typescript and the compiled javascript.
 
-Look ove the files in this project. See if you can spot where pain points might be.
+Look over the files in this project. See if you can spot where pain points might be.
