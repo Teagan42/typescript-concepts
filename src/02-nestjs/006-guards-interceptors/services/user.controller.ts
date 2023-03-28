@@ -2,6 +2,7 @@ import { Body, Controller, Get, Param, Put, UseGuards, UseInterceptors } from "@
 import { UserService } from "./user.service";
 import { HelloOnly } from "../guards/guard.hello-only";
 import { RequestCountInterceptor } from "../interceptors/request-count.interceptor";
+import { Random } from "../guards/guard.random";
 
 @Controller()
 export class UserController {
@@ -17,6 +18,7 @@ export class UserController {
   }
 
   @Get()
+  @UseGuards(Random)
   getUsers() {
     return this.userService.getAll();
   }
