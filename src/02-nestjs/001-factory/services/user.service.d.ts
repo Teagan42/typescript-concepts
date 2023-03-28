@@ -1,4 +1,4 @@
-import { PostService } from "./post.service";
+import { PostService } from "./posts/post.service";
 import { Post, User } from "../models";
 export declare class UserService {
     private readonly userFactory;

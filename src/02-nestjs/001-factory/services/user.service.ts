@@ -1,4 +1,4 @@
-import { PostService } from "./post.service";
+import { PostService } from "./posts/post.service";
 import { Post, User } from "../models";
 import { Inject, Injectable } from "@nestjs/common";
 import { UserFactory, KEY } from "./user.factory";
@@ -28,6 +28,6 @@ export class UserService {
 
   createPost(userId: string, title: string, content: string): Post {
     const user = this.get(userId);
-    return this.postService.createPost(user, title, content);
+    return this.postService.createPost(userId, title, content);
   }
 }
