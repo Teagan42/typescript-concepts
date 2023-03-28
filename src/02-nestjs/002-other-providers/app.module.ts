@@ -5,10 +5,13 @@ import { AppVersion, AppVersionKey } from "./app-version.provider";
 import { ProductionEnvironment } from "./environment/production.environment";
 import { DevelopmentEnvironment } from "./environment/development.environment";
 import { Environment } from "./environment/environment";
+import { UserTagConfig } from "./config/user-tag.config";
+import { ConfigModule } from "@nestjs/config";
 
 const environmentClass = process.env["ENVIRONMENT"] === "PROD" ? ProductionEnvironment : DevelopmentEnvironment;
 
 @Module({
+  imports:[ConfigModule.forFeature(UserTagConfig)],
   providers: [
     UserFactory,
     UserService,
